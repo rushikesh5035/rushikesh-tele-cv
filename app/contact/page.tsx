@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { CiMail } from "react-icons/ci";
-import { FaGithub, FaInstagram, FaLinkedin, FaDiscord } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SocialLinks } from "@/lib/constants";
 
