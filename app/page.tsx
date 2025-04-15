@@ -9,7 +9,7 @@ import { FaGithub, FaInstagram, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SocialLinks } from "@/lib/constants";
 import * as motion from "motion/react-client";
-import { TechStack } from "@/data/skills";
+import techStack from "@/public/skills-images/techStack.png";
 
 export default function Home() {
   const transition = {
@@ -106,11 +106,7 @@ export default function Home() {
         Technologies I use to build modern web applications
       </p>
       <div className="flex flex-wrap justify-center py-3 px-3 border border-zinc-800 rounded-md gap-2 mt-3 hover:scale-105 transition-all">
-        {TechStack.map((skill) => (
-          <div key={skill.name}>
-            <img src={skill.skillUrl} alt={skill.name} />
-          </div>
-        ))}
+        <Image src={techStack} width={700} height={10} alt="frontend" />
       </div>
 
       <h1 className="text-3xl font-bold pt-10 ">Projects</h1>

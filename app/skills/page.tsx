@@ -1,8 +1,11 @@
-import BlogCard from "@/components/BlogCard";
-import { blogmetadata } from "@/data/blogs";
-import { skills } from "@/data/skills";
-
 import * as motion from "motion/react-client";
+import Image from "next/image";
+import frontendSkill from "@/public/skills-images/frontendSkill.png";
+import Backend from "@/public/skills-images/backend.png";
+import databases from "@/public/skills-images/database.png";
+import appdev from "@/public/skills-images/app-dev.png";
+import languages from "@/public/skills-images/languages.png";
+import others from "@/public/skills-images/others.png";
 
 export default function Skills() {
   const transition = {
@@ -20,11 +23,7 @@ export default function Skills() {
       <div className="p-3 border border-zinc-800 rounded-md mb-3 hover:scale-105 transition-all">
         <h3 className="text-1xl font-bold ">Frontend:</h3>
         <div className="flex flex-wrap gap-2 mt-2">
-          {skills.slice(0, 11).map((skill) => (
-            <div key={skill.name}>
-              <img src={skill.skillUrl} alt={skill.name} />
-            </div>
-          ))}
+          <Image src={frontendSkill} width={600} height={10} alt="frontend" />
         </div>
       </div>
 
@@ -32,11 +31,7 @@ export default function Skills() {
       <div className="p-3 border border-zinc-800  rounded-md mb-3 hover:scale-105 transition-all">
         <h3 className="text-1xl font-bold ">Backend:</h3>
         <div className="flex flex-wrap gap-2 mt-2">
-          {skills.slice(11, 16).map((skill) => (
-            <div key={skill.name}>
-              <img src={skill.skillUrl} alt={skill.name} />
-            </div>
-          ))}
+          <Image src={Backend} width={550} height={10} alt="backend" />
         </div>
       </div>
 
@@ -44,11 +39,7 @@ export default function Skills() {
       <div className="p-3 border border-zinc-800  rounded-md mb-3 hover:scale-105 transition-all">
         <h3 className="text-1xl font-bold ">Databases:</h3>
         <div className="flex flex-wrap gap-2 mt-2">
-          {skills.slice(16, 21).map((skill) => (
-            <div key={skill.name}>
-              <img src={skill.skillUrl} alt={skill.name} />
-            </div>
-          ))}
+          <Image src={databases} width={550} height={10} alt="databases" />
         </div>
       </div>
 
@@ -56,11 +47,7 @@ export default function Skills() {
       <div className="p-3 border border-zinc-800  rounded-md mb-3 hover:scale-105 transition-all">
         <h3 className="text-1xl font-bold ">App Development:</h3>
         <div className="flex flex-wrap gap-2 mt-2">
-          {skills.slice(21, 23).map((skill) => (
-            <div key={skill.name}>
-              <img src={skill.skillUrl} alt={skill.name} />
-            </div>
-          ))}
+          <Image src={appdev} width={550} height={10} alt="appdev" />
         </div>
       </div>
 
@@ -68,11 +55,7 @@ export default function Skills() {
       <div className="p-3 border border-zinc-800  rounded-md mb-3 hover:scale-105 transition-all">
         <h3 className="text-1xl font-bold ">Languages:</h3>
         <div className="flex flex-wrap gap-2 mt-2">
-          {skills.slice(23, 26).map((skill) => (
-            <div key={skill.name}>
-              <img src={skill.skillUrl} alt={skill.name} />
-            </div>
-          ))}
+          <Image src={languages} width={550} height={10} alt="languages" />
         </div>
       </div>
 
@@ -80,11 +63,7 @@ export default function Skills() {
       <div className="p-3 border border-zinc-800  rounded-md mb-3 hover:scale-105 transition-all">
         <h3 className="text-1xl font-bold ">Other:</h3>
         <div className="flex flex-wrap gap-2 mt-2">
-          {skills.slice(26, 35).map((skill) => (
-            <div key={skill.name}>
-              <img src={skill.skillUrl} alt={skill.name} />
-            </div>
-          ))}
+          <Image src={others} width={650} height={10} alt="others" />
         </div>
       </div>
     </motion.main>
