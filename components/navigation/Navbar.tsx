@@ -28,6 +28,12 @@ export default function Navbar() {
           Skills
         </Link>
         <Link
+          href={"/education"}
+          className={pathname === "/education" ? "font-bold underline" : ""}
+        >
+          Education
+        </Link>
+        <Link
           href={"/contact"}
           className={pathname === "/contact" ? "font-bold underline" : ""}
         >

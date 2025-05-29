@@ -18,12 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jura.className} antialiased`}>
-        <MaxWidthWrapper>
-          <Navbar />
-          {children}
-          <Footer />
-        </MaxWidthWrapper>
-      </body>
+       
+          <MaxWidthWrapper>
+            <Navbar />
+            {children}
+            <Footer />
+          </MaxWidthWrapper>
+        </body>
     </html>
   );
 }

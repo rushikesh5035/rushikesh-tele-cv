@@ -10,12 +10,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "TypeArena",
+    title: "Summarist.AI",
     description:
-      "A fast-paced multiplayer typing game that challenges your typing speed and accuracy.",
-    imgPath: "/project-images/typearena.png",
-    techs: ["NextJS", "ReactJS", "Socket.io", "TailwindCSS"],
-    githubLink: "https://github.com/rushikesh5035/typearena",
+      "AI-powered SaaS platform to transform PDFs into structured summaries, highlighting key points and insights.",
+    imgPath: "/project-images/summarist_ai.png",
+    techs: [
+      "Next.js",
+      "React",
+      "Gemini AI",
+      "LangChain",
+      "NeonDB",
+      "TailwindCSS",
+    ],
+    githubLink: "https://github.com/rushikesh5035/summarist-ai",
     status: "building",
   },
   {
