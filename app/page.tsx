@@ -89,7 +89,7 @@ export default function Home() {
 
             <div className="bg-green-200 text-green-800 text-xs px-1 rounded-sm flex items-center gap-2 font-bold border w-fit border-green-800 hover:scale-125 transition-all">
               <Link
-                href="https://drive.google.com/file/d/12iMKyP-cnAcPAfKksbN4T_qP26WUux9z/view?usp=sharing"
+                href="https://drive.google.com/file/d/1NghMSDV-tUfMl68xkPo-P53ae9ukXZu_/view?usp=sharing"
                 target="_blank"
                 className="flex items-center gap-2"
               >

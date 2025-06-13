@@ -23,7 +23,8 @@ export const projects: Project[] = [
       "TailwindCSS",
     ],
     githubLink: "https://github.com/rushikesh5035/summarist-ai",
-    status: "building",
+    liveLink: "https://summarist-ai.vercel.app/",
+    status: "online",
   },
   {
     title: "Forever",
