@@ -12,16 +12,15 @@ import * as motion from "motion/react-client";
 import techStack from "@/public/skills-images/techStack.png";
 
 export default function Home() {
-  const transition = {
-    duration: 0.2,
-    delay: 0.4,
-    ease: [0, 0.71, 0.2, 1.01],
-  };
+  // const transition = {
+  //   duration: 0.2,
+  //   delay: 0.4,
+  //   ease: [0, 0.71, 0.2, 1.01],
+  // };
   return (
     <motion.main
       initial={{ filter: "blur(15px)", y: 20 }}
       animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-      transition={transition}
       className="opacity-0"
     >
       {/* About me Section */}
@@ -41,12 +40,12 @@ export default function Home() {
           </h1>
 
           <p className="">
-            I am a third year student who loves building apps and websites that
-            are useful.
+            Full Stack Web, Mobile App Developer and DevOps Engineer focused on
+            learning through experimentation and product development.
           </p>
-          <p className="">
+          {/* <p className="">
             Full Stack Developer, App Developer and DevOps Engineer.
-          </p>
+          </p> */}
 
           <div className="flex gap-4 ">
             <Link

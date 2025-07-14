@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jura.className} antialiased`}>
+        {/* <GridBackground /> */}
         <MaxWidthWrapper>
           <Navbar />
           {children}
